@@ -1,0 +1,34 @@
+1 - Primeiro devemos instalar o Pacote Json, é ele quem vai criar as nossas configurações
+     - o comando é npm init
+2- Devemos instalar as bibliotecas
+    - Nesse projeto usamos o Yarn,  ele é um gerenciamento de pacotes, ele responsavel pela a execução mais eficiente e rapdida dos mesmos. 
+    
+3 - Instalando o framework Express, ele é repsonssavel por simplificar o processo de criação de apps e APIs
+    - Ele offerece uma camanda de abstração sobre o NODE, facilitando a definição de rotas, manipulação de requisições HTTP, 
+        gerenciamento de respostas e muito mais.
+    - O expresse nesse projeto foi instalado o express com o yarn, com o comando: yarn add express
+        Caso dê um problema com a execução do comando a cima, basta rodar esse comento Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+            ele vai tornar o POWERSHELL como ADM, pois esse comando só é aceito no POWERSHELL
+
+4 - Precisamos agora criar o arquivo Idex.Js, para que seja aplicadas as dependencias 
+5 - criando os pacotes de importação no arquivo Index.js
+6 - Criando e configurando a porta do nosso PC para que ele escute. 
+    - isso é feito para que seja garantido uma forma de resposta para sabermos se está ou não conectado ao servidor.
+7 - Criar o nosso primeiro metodo HTTP, que é o que podemos iteragir com os dados, temos Três forma de interagir com os dados, são eles:
+    - POST (Create) = Com esse metodo podemos inserir dados em um arquivo, que pode ser um Jason, como pode ser direto em um banco de dados.
+    - GET (Read) =  Com esse metodo podemos buscar/listar todos os dados do arquivo
+    - PUT (Update) = Com esse metodo podemos atualizar os arquivos ou até mesmo uma propriedade do arquivo.
+    - DELETE (Delete) = Com esse metodo podemos deletar o aquivo ou apenas uma propriedade do araquiv.
+8 - Criar metodo para que possamos fazer com que o servidor seja atualizado de forma instântanea, pois se caso não for feito ou utilizado
+     essa forma, é necessario sempre estartar novamente o serviço. 
+     - Para resolver esse problema usamos o NODEMOM, ele vai resolver oi problema e vai fazer o serviço atualizar os metodos de forma instântanea.
+     -  O comando para instalar esse pacote é: yarn global add nodemon
+     - Apos isso é necessario alterar o arquivo de configuração do projeto (pakage.json). 
+        - No arquivo precisamos criar um arquivo chamado "Strat", para que seja sempre chamdo o arquivo ininical da aplicação que é: index.js 
+        - Dentro do "Script", vamos criar o arquivo chamado "start": "nodemon ./index.js" 
+9 - Foi criado uma nova pasta para colocar um arquivo do tipo JSON, para se consumido e cirarmos interações com a nossa API
+
+
+
+
+
